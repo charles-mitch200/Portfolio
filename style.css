@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -17,9 +17,10 @@ body {
 #header {
   width: 100%;
   height: 100vh;
-  /* background-image: url(Images/background.jpg);
-  background-size: cover;
-  background-position: right; */
+  /* background-image: url(Images/img4.JPG);
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat; */
 }
 
 .logo {
@@ -347,82 +348,84 @@ form .btn-2 {
   font-size: 18px;
 }
 
-.copyright{
-    width: 100%;
-    text-align: center;
-    padding: 25px 0;
-    background: #262626;
-    font-weight: 300;
-    margin-top: 20px;
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background: #262626;
+  font-weight: 300;
+  margin-top: 20px;
 }
 
 /*Making the site responsive*/
 nav .fas {
-    display: none;
+  display: none;
 }
-@media screen and (max-width: 600px) {
-    .header-text{
-        margin-top: 100%;
-        font-size: 16px;
-    }
+@media screen and (max-width: 768px) {
+  .header-text {
+    margin-top: 100%;
+    font-size: 16px;
+  }
 
-    .header-text h1 {
-        font-size: 30px;
-    }
+  .header-text h1 {
+    font-size: 30px;
+  }
 
-    nav .fas{
-        display: block;
-        font-size: 20px;
-        cursor: pointer;
-    }
+  nav .fas {
+    display: block;
+    font-size: 20px;
+    cursor: pointer;
+  }
 
-    nav ul {
-        background-color: #ff004f;
-        position: fixed;
-        top: 0;
-        right: -200px;
-        width: 200px;
-        height: 100vh;
-        padding-top: 50px;
-        z-index: 2;
-        transition: right .5s;
-    }
-    nav ul li {
-        display: block;
-        margin: 25px;
-    }
-    nav ul .fas{
-        position: absolute;
-        top: 25px;
-        left: 25px;
-        cursor: pointer;
-    }
-    .sub-title {
-      font-size: 40px;
-    }
-    .about-col-1, .about-col-2 {
-      flex-basis: 100%;
-    }
-    .about-col-1{
-      margin-bottom: 30px;
-    }
-    .about-col-2{
-      font-size: 14px;
-    }
-    .tab-links{
-      font-size: 16px;
-      margin-right: 20px;
-    }
+  nav ul {
+    background-color: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+  nav ul .fas {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  .sub-title {
+    font-size: 40px;
+  }
+  .about-col-1,
+  .about-col-2 {
+    flex-basis: 100%;
+  }
+  .about-col-1 {
+    margin-bottom: 30px;
+  }
+  .about-col-2 {
+    font-size: 14px;
+  }
+  .tab-links {
+    font-size: 16px;
+    margin-right: 20px;
+  }
 
-    .contact-left, .contact-right{
-      flex-basis: 100%;
-    }
-    .copyright{
-      font-size: 14px;
-    }
+  .contact-left,
+  .contact-right {
+    flex-basis: 100%;
+  }
+  .copyright {
+    font-size: 14px;
+  }
 }
 
-#msg{
+#msg {
   margin-top: -40px;
   color: #61b752;
   display: block;
